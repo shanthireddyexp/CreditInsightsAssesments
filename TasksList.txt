@@ -1,0 +1,10 @@
+Assesment-1:
+Validate the below using selenium-java: 
+ Top menu existance 
+ Top menu navigation 
+ Top menu order 
+  Menu options (more) existence, order, navigation 
+Site: cnn.com
+Requirement: 
+Prefer using re-usable codes 
+Script should be expandable like if a new menu comes on site UI, still script should work and validate the new menu.
