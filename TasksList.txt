@@ -8,3 +8,12 @@ Site: cnn.com
 Requirement: 
 Prefer using re-usable codes 
 Script should be expandable like if a new menu comes on site UI, still script should work and validate the new menu.
+
+Assesment-2:
+
+Validation of "Middle East" box under "Around the Word" section on "World" page.
+Validate the section, box existence.
+Validate the content/ articles navigation.
+Validate the content/ articles are belongs to Mddle East box.
+Code Flexibility: 
+Same code should be able to expand for other boxes validation like EUROPE.
