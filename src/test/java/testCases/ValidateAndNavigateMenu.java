@@ -8,7 +8,7 @@ import static org.hamcrest.core.StringContains.containsString;
 import java.util.List;
 
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pageObjects.HomePage;
@@ -20,7 +20,7 @@ public class ValidateAndNavigateMenu extends BaseClass{
 	public String xlFile = "MenuData.xls";
 	
 	@Parameters("browser")
-	@BeforeClass
+	@BeforeMethod
 	public void setUp(String browser) {
 		intialization(browser);
 		homePage = new HomePage(driver);

@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,7 +104,12 @@
                     <div class="method-list-content failed suite-Assesment1">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Assesment1" title="testCases.ValidateWorldPage" class="method navigator-link" hash-for-method="validateAndNavigateWorld">validateAndNavigateWorld</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Assesment1" title="testCases.ValidateWorldPage" class="method navigator-link" hash-for-method="validateAndNavigateEuropePage">validateAndNavigateEuropePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Assesment1" title="testCases.ValidateWorldPage" class="method navigator-link" hash-for-method="validateAndNavigateMiddleEastPage">validateAndNavigateMiddleEastPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Assesment1 -->
@@ -127,19 +132,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validateAndNavigateWorld">
-                  </a> <!-- validateAndNavigateWorld -->
-                  <span class="method-name">validateAndNavigateWorld</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+                  <a name="validateAndNavigateEuropePage">
+                  </a> <!-- validateAndNavigateEuropePage -->
+                  <span class="method-name">validateAndNavigateEuropePage</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/2023/01/30/europe/wagner-norway-andrei-medvedev-ukraine-intl&quot; class=&quot;container__link container_lead-plus-headlines-with-images__link&quot;&gt;...&lt;/a&gt; is not clickable at point (345, 76). Other element would receive the click: &lt;div class=&quot;ad-slot-header&quot; data-uri=&quot;cms.cnn.com/_components/ad-slot-header/instances/cnn-v1@published&quot;&gt;...&lt;/div&gt;
   (Session info: chrome=109.0.5414.120)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
 Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [da57e2e39ef6d575dfb08948711c25d4, getElementAttribute {id=652834ab-6b2d-4809-b860-b331da727b65, name=innerText}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PRASAN~1.BUR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:50058}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50058/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (da57e2e39ef6d575dfb08948711c25d4)] -&gt; css selector: a[href*=&apos;middleeast&apos;]]
-Session ID: da57e2e39ef6d575dfb08948711c25d4
+Command: [26dd4851638031ab789d835d7f62fc14, clickElement {id=fd7267c6-4a2a-4b53-a5b2-7bef5163bade}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PRASAN~1.BUR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:50944}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50944/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (26dd4851638031ab789d835d7f62fc14)] -&gt; partial link text: Former Wagner commander describes brutality and incompetence on the frontline]
+Session ID: 26dd4851638031ab789d835d7f62fc14
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -148,14 +152,55 @@ Session ID: da57e2e39ef6d575dfb08948711c25d4
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:158)
-	at pageObjects.MiddleEastPage.getMiddleEastPageArticles(MiddleEastPage.java:29)
-	at testCases.ValidateWorldPage.validateAndNavigateWorld(ValidateWorldPage.java:43)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at pageObjects.WorldPage.clickOnLinks(WorldPage.java:127)
+	at pageObjects.WorldPage.getSectionLinkTextAndClick(WorldPage.java:113)
+	at testCases.ValidateWorldPage.validatingContentAndNavigation(ValidateWorldPage.java:70)
+	at testCases.ValidateWorldPage.validateAndNavigateEuropePage(ValidateWorldPage.java:60)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 17 stack frames
 </div> <!-- stack-trace -->
                   <em>
-(Validating navigating World Page)                  </em>
+(Validating and navigating Europe page articles)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateAndNavigateMiddleEastPage">
+                  </a> <!-- validateAndNavigateMiddleEastPage -->
+                  <span class="method-name">validateAndNavigateMiddleEastPage</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/2023/01/30/middleeast/iran-boxer-ashkan-morovati-protest-intl&quot; class=&quot;container__link container_lead-plus-headlines-with-images__link&quot;&gt;...&lt;/a&gt; is not clickable at point (345, 252). Other element would receive the click: &lt;div class=&quot;ad-slot-header&quot; data-uri=&quot;cms.cnn.com/_components/ad-slot-header/instances/cnn-v1@published&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=109.0.5414.120)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8f02e5dd7b253f3c2856272061e8d74c, clickElement {id=4e113f73-65c8-42bb-b215-0b3496739d58}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PRASAN~1.BUR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51251}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51251/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (8f02e5dd7b253f3c2856272061e8d74c)] -&gt; partial link text: Courtesy Ashkan Morovati
+The bare-chested boxer who became a hero to Iran&apos;s protest movement]
+Session ID: 8f02e5dd7b253f3c2856272061e8d74c
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at pageObjects.WorldPage.clickOnLinks(WorldPage.java:127)
+	at pageObjects.WorldPage.getSectionLinkTextAndClick(WorldPage.java:113)
+	at testCases.ValidateWorldPage.validatingContentAndNavigation(ValidateWorldPage.java:70)
+	at testCases.ValidateWorldPage.validateAndNavigateMiddleEastPage(ValidateWorldPage.java:45)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Validating and navigating Middle East page articles)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -169,8 +214,8 @@ Session ID: da57e2e39ef6d575dfb08948711c25d4
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Assesment1&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Assesment Test&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; parallel=&quot;methods&quot; name=&quot;Assesment1&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; parallel=&quot;methods&quot; name=&quot;Assesment Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testCases.ValidateWorldPage&quot;/&gt;
@@ -213,16 +258,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validateAndNavigateWorld')
+data.setCell(0, 1, 'validateAndNavigateMiddleEastPage')
 data.setCell(0, 2, 'testCases.ValidateWorldPage')
-data.setCell(0, 3, 34008);
+data.setCell(0, 3, 12957);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'validateAndNavigateEuropePage')
+data.setCell(1, 2, 'testCases.ValidateWorldPage')
+data.setCell(1, 3, 11765);
 window.suiteTableData['Assesment1']= { tableData: data, tableDiv: 'times-div-Assesment1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 34 seconds</span>
+              <span class="suite-total-time">Total running time: 24 seconds</span>
               <div id="times-div-Assesment1">
               </div> <!-- times-div-Assesment1 -->
             </div> <!-- times-div -->
@@ -249,19 +298,33 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.ValidateWorldPage</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
+              <div class="configuration-method before">
                 <span class="method-name">setUp(chrome)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">validateAndNavigateWorld</span>
-                <span class="method-start">30585 ms</span>
+                <span class="method-name">validateAndNavigateEuropePage</span>
+                <span class="method-start">14276 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">64601 ms</span>
+                <span class="method-start">26050 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">27095 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateAndNavigateMiddleEastPage</span>
+                <span class="method-start">41957 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">54916 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

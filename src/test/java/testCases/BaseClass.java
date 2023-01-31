@@ -2,9 +2,9 @@ package testCases;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 
-
+import pageObjects.EuropePage;
 import pageObjects.HomePage;
 import pageObjects.MiddleEastPage;
 import pageObjects.WorldPage;
@@ -19,6 +19,7 @@ public class BaseClass {
 	 public HomePage homePage;
 	 public WorldPage worldPage;
 	 public MiddleEastPage middleEastPage;
+	 public EuropePage europePage;
 		
 	public WebDriver driver;
 	
@@ -35,7 +36,7 @@ public class BaseClass {
 		driver.manage().window().maximize();
 	}
 	
-	@AfterClass
+	@AfterMethod
 	public void tearDown()
 	{
 		driver.quit();

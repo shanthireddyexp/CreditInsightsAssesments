@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Assesment1">
+<suite name="Assesment1" parallel='methods' thread-count='1'>
 
 	<test name="Assesment Test">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			 <!-- <class name="testCases.ValidateAndNavigateMenu" /> -->
+			<!-- <class name="testCases.ValidateAndNavigateMenu" /> -->
 			<class name="testCases.ValidateWorldPage" />
 		</classes>
 

@@ -9,20 +9,19 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Assesment1</th></tr>
-<tr><td><a href="#t0">Assesment Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">65,737</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Assesment Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">55,892</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Assesment1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Assesment Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testCases.ValidateWorldPage</td><td><a href="#m0">validateAndNavigateWorld</a></td><td rowspan="1">1675143396400</td><td rowspan="1">34008</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Assesment1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Assesment Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">testCases.ValidateWorldPage</td><td><a href="#m0">validateAndNavigateEuropePage</a></td><td rowspan="1">1675167684824</td><td rowspan="1">11765</td></tr><tr class="failedeven"><td><a href="#m1">validateAndNavigateMiddleEastPage</a></td><td rowspan="1">1675167712505</td><td rowspan="1">12957</td></tr></tbody>
 </table>
-<h2>Assesment Test</h2><h3 id="m0">testCases.ValidateWorldPage#validateAndNavigateWorld</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+<h2>Assesment Test</h2><h3 id="m0">testCases.ValidateWorldPage#validateAndNavigateEuropePage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/2023/01/30/europe/wagner-norway-andrei-medvedev-ukraine-intl&quot; class=&quot;container__link container_lead-plus-headlines-with-images__link&quot;&gt;...&lt;/a&gt; is not clickable at point (345, 76). Other element would receive the click: &lt;div class=&quot;ad-slot-header&quot; data-uri=&quot;cms.cnn.com/_components/ad-slot-header/instances/cnn-v1@published&quot;&gt;...&lt;/div&gt;
   (Session info: chrome=109.0.5414.120)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
 Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [da57e2e39ef6d575dfb08948711c25d4, getElementAttribute {id=652834ab-6b2d-4809-b860-b331da727b65, name=innerText}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PRASAN~1.BUR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:50058}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50058/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (da57e2e39ef6d575dfb08948711c25d4)] -&gt; css selector: a[href*=&apos;middleeast&apos;]]
-Session ID: da57e2e39ef6d575dfb08948711c25d4
+Command: [26dd4851638031ab789d835d7f62fc14, clickElement {id=fd7267c6-4a2a-4b53-a5b2-7bef5163bade}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PRASAN~1.BUR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:50944}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50944/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (26dd4851638031ab789d835d7f62fc14)] -&gt; partial link text: Former Wagner commander describes brutality and incompetence on the frontline]
+Session ID: 26dd4851638031ab789d835d7f62fc14
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -31,10 +30,41 @@ Session ID: da57e2e39ef6d575dfb08948711c25d4
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:158)
-	at pageObjects.MiddleEastPage.getMiddleEastPageArticles(MiddleEastPage.java:29)
-	at testCases.ValidateWorldPage.validateAndNavigateWorld(ValidateWorldPage.java:43)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at pageObjects.WorldPage.clickOnLinks(WorldPage.java:127)
+	at pageObjects.WorldPage.getSectionLinkTextAndClick(WorldPage.java:113)
+	at testCases.ValidateWorldPage.validatingContentAndNavigation(ValidateWorldPage.java:70)
+	at testCases.ValidateWorldPage.validateAndNavigateEuropePage(ValidateWorldPage.java:60)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testCases.ValidateWorldPage#validateAndNavigateMiddleEastPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/2023/01/30/middleeast/iran-boxer-ashkan-morovati-protest-intl&quot; class=&quot;container__link container_lead-plus-headlines-with-images__link&quot;&gt;...&lt;/a&gt; is not clickable at point (345, 252). Other element would receive the click: &lt;div class=&quot;ad-slot-header&quot; data-uri=&quot;cms.cnn.com/_components/ad-slot-header/instances/cnn-v1@published&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=109.0.5414.120)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8f02e5dd7b253f3c2856272061e8d74c, clickElement {id=4e113f73-65c8-42bb-b215-0b3496739d58}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PRASAN~1.BUR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51251}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51251/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (8f02e5dd7b253f3c2856272061e8d74c)] -&gt; partial link text: Courtesy Ashkan Morovati
+The bare-chested boxer who became a hero to Iran&apos;s protest movement]
+Session ID: 8f02e5dd7b253f3c2856272061e8d74c
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at pageObjects.WorldPage.clickOnLinks(WorldPage.java:127)
+	at pageObjects.WorldPage.getSectionLinkTextAndClick(WorldPage.java:113)
+	at testCases.ValidateWorldPage.validatingContentAndNavigation(ValidateWorldPage.java:70)
+	at testCases.ValidateWorldPage.validateAndNavigateMiddleEastPage(ValidateWorldPage.java:45)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
