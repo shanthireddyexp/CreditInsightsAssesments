@@ -26,7 +26,8 @@ public class ValidateAndNavigateMenu extends BaseClass{
 		homePage = new HomePage(driver);
 	    			
 	}
-    @Test
+	
+    @Test(description = "Validating and navigating menu options and more menu options")
     public void validateAndNavigateMenu() throws Exception {
 
         homePage=new HomePage(driver);
@@ -42,6 +43,15 @@ public class ValidateAndNavigateMenu extends BaseClass{
        
               
     }
+    
+    /**
+     * Verifying existence and navigation of menu options and mouse hover to moremenu and validating sub menus 
+     * 
+     * @param actualMenuList
+     * @param xlFile
+     * @param sheetNum
+     * @param menuType
+     */
     
 	public void verifyExistanceAndNavigationOfMenuOptions(List<String> actualMenuList, String xlFile, int sheetNum,
 			String menuType){

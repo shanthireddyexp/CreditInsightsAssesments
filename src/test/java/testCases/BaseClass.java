@@ -2,7 +2,7 @@ package testCases;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterClass;
 
 
 import pageObjects.HomePage;
@@ -35,13 +35,19 @@ public class BaseClass {
 		driver.manage().window().maximize();
 	}
 	
-	@AfterMethod
+	@AfterClass
 	public void tearDown()
 	{
 		driver.quit();
 	}
 	
 
+	/**
+	 * Navigating back to base Url 
+	 * 
+	 * @param driver
+	 * @param baseUrl
+	 */
 	public void navigateBackToApplication(WebDriver driver, String baseUrl) {
 		this.driver.navigate().to(baseUrl);  
 	}
